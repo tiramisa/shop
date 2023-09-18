@@ -97,6 +97,21 @@ header .shop-cart .item h2 {
   margin-bottom: 10px;
 }
 
+header .shop-cart .item .delete-icon {
+  color: #ca5252;
+  float: right;
+  position: relative;
+  top: -40px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover,
+header .shop-cart .item .delete-icon:focus {
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
+}
+
 header .presentation {
   margin: 50px 0;
   background: url('./img/diz-doma.jpeg') no-repeat;

@@ -60,15 +60,20 @@ class App extends React.Component {
       ],
     };
     this.addToOrder = this.addToOrder.bind(this);
+    this.deleteOder = this.deleteOder.bind(this);
   }
   render() {
     return (
       <div className="wrapper">
-        <Header orders={this.state.orders} />
+        <Header orders={this.state.orders} onDelete={this.deleteOder} />
         <Items items={this.state.items} onAdd={this.addToOrder} />
         <Footer />
       </div>
     );
+  }
+
+  deleteOder(id) {
+    console.log(id);
   }
   addToOrder(item) {
     let isInArray = false;
